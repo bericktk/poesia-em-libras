@@ -1,0 +1,20 @@
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner Inicio */
+.banner-inicio .carousel-inner .carousel-item {
+    max-width: auto;
+    max-height: 85vh;   
+}
+
+.sobre-mim{
+    padding: 5vh;
+}
