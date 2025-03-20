@@ -1,2 +1,2 @@
-# site-renata
-Site para um projeto educativo.
+# Poesia em Libras
+Site para um projeto educativo em Libras.
