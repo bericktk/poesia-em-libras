@@ -15,6 +15,31 @@ body{
     max-height: 85vh;   
 }
 
-.sobre-mim{
+/* Projetos em Destaque */
+
+.projetos-destaques{
+    margin-top: -26vh;
+}
+
+.lista-projetos-destaques{
     padding: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Sobre Mim */
+.sobre-mim{
+    padding: 1vh;
+}
+
+.sobre-mim img{
+    display: block;
+    margin: 10px auto 10px 10px;
+    text-align: center;
+    max-width: 100%;
+    max-height: 50vh;
+
 }
