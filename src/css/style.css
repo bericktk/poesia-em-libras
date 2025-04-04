@@ -2,12 +2,21 @@ body{
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #333333;
+    background-color: #F7F3E9;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header */
+/* .navbar{
+    background-image: url("../images/slides/fundo-slide-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+} */
 
 /* Banner Inicio */
 .banner-inicio .carousel-inner .carousel-item {
@@ -27,9 +36,11 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 2vh;
 }
 
 /* Sobre Mim */
+
 .sobre-mim{
     padding: 1vh;
 }

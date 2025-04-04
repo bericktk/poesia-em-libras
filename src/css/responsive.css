@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 600px){
     .body{
         background-color: #f4f4f4;
     }
@@ -9,5 +9,23 @@
 
     .projetos-destaques{
         margin-top: 0;
+    }
+
+    .lista-projetos-destaques{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 16px;
+        padding: 16px;
+        scroll-behavior: smooth;
+    }
+
+    .lista-projetos-destaques::-webkit-scrollbar {
+        display: none;
+    }
+
+    .lista-projetos-destaques > *{
+        flex: 0 0 auto;
     }
 }
