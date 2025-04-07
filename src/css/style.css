@@ -1,28 +1,65 @@
 body{
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #333333;
-    background-color: #F7F3E9;
+    background-color: #F7F3E9 !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: Playfair Display;
+    font-weight: 700;
+    color: #333333;
+}
+
+p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
 /* Header */
-/* .navbar{
+.navbar{
     background-image: url("../images/slides/fundo-slide-1.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     height: 100vh;
-} */
+    font-family: Playfair Display;
+}
+
+.navbar-collapse{
+    align-items: baseline !important;
+    text-align: end;
+}
+
+button.navbar-toggler{
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link{
+    color: #fff !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar-nav .nav-link:hover{
+    color:#005F73 !important;
+    text-decoration: underline;
+}
 
 /* Banner Inicio */
-.banner-inicio .carousel-inner .carousel-item {
+/* .banner-inicio .carousel-inner .carousel-item {
     max-width: auto;
     max-height: 85vh;   
-}
+} */
 
 /* Projetos em Destaque */
 
