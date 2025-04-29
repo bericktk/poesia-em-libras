@@ -3,7 +3,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #333333;
-    background-color: #F7F3E9 !important;
+    background-color: #b87956 !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,13 +36,17 @@ p{
 }
 
 button.navbar-toggler{
-    background-color: #fff;
+    background-color: #C09E3D;
     border: none;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.navbar-nav{
+    margin-top: -13vh;
 }
 
 .navbar-nav .nav-link{
@@ -82,11 +86,11 @@ button.navbar-toggler{
     padding: 1vh;
 }
 
-/* .sobre-mim img{
-    display: block;
-    margin: 10px auto 10px 10px;
-    text-align: center;
-    max-width: 100%;
-    max-height: 50vh;
+.card-text{
+    font-size: 40px;
+    font-weight: 700;
+}
 
-} */
+.banner-governo-ce{
+    margin-top: 1vh;
+}
