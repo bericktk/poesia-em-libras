@@ -1,33 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: #333333;
-    background-color: #bc191a !important;
+    color: #2B2B2B;
+    background-color: #B71C1C !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: Playfair Display;
+    font-family: "Merriweather Sans", sans-serif;
     font-weight: 700;
     color: #333333;
 }
 
 p{
-    font-family: 'Open Sans';
-    font-weight: 400;
+    font-family: "Lora", serif;
 }
 
 /* Header */
 .navbar{
-    background-image: url("../images/slides/fundo-slide-1.jpeg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 100vh;
-    font-family: Playfair Display;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background: rgba(0, 0, 0, 0); /* Fundo transparente */
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.navbar img{
+    max-width: 30vh;
+    height: auto;
 }
 
 .navbar-collapse{
@@ -60,10 +74,10 @@ button.navbar-toggler{
 }
 
 /* Banner Inicio */
-/* .banner-inicio .carousel-inner .carousel-item {
-    max-width: auto;
-    max-height: 85vh;   
-} */
+.banner-inicio .carousel-inner .carousel-item {
+    max-width: 100%;
+    max-height: 100vh;
+}
 
 /* Projetos em Destaque */
 
@@ -81,15 +95,59 @@ button.navbar-toggler{
 }
 
 /* Sobre Mim */
-
 .sobre-mim{
     padding: 1vh;
 }
 
-.card-text{
-    font-size: 40px;
-    font-weight: 700;
+.fundo-sobre-mim{
+    background-color: #FFF8F6;
 }
+
+.card-title{
+    color: #B71C1C !important;
+}
+
+.card-text p{
+    font-size: 30px;
+    color: #2B2B2B;
+}
+
+/* Projetos */
+.projetos-titulo{
+    padding: 5vh;
+    color: #FFF;
+    text-align: center;
+}
+
+.projetos{
+    border: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    padding: 5vh;
+    flex-direction: row;
+}
+
+/* Redes Sociais */
+.contatos{
+    padding: 5vh;
+}
+
+.instagram-titulo{
+    padding: 5vh;
+    color: #FFF !important;
+    font-size: 30px;
+    text-align: center;
+}
+
+.instagram-feed{
+    border: 1px solid #fff;
+    padding: 5vh;
+}
+
+/* Footer */
 
 .banner-governo-ce{
     margin-top: 1vh;

@@ -24,6 +24,15 @@
         height: 50vh;
     }
 
+    .navbar img{
+        max-width: 10vh;
+        height: auto;
+    }
+
+    .navbar-nav{
+        margin-top: 0;
+    }
+
     .projetos-destaques{
         margin-top: 0;
     }
