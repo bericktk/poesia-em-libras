@@ -1,154 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: #2B2B2B;
-    background-color: #B71C1C !important;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #2b2b2b;
+  background-color: #b71c1c !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "Merriweather Sans", sans-serif;
-    font-weight: 700;
-    color: #333333;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  color: #333333;
 }
 
-p{
-    font-family: "Lora", serif;
-}
-
-/* Header */
-.navbar{
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1030;
-    background: rgba(0, 0, 0, 0); /* Fundo transparente */
-    font-family: "Merriweather Sans", sans-serif;
-}
-
-.navbar img{
-    max-width: 30vh;
-    height: auto;
-}
-
-.navbar-collapse{
-    align-items: baseline !important;
-    text-align: end;
-}
-
-button.navbar-toggler{
-    background-color: #C09E3D;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.navbar-nav{
-    margin-top: -13vh;
-}
-
-.navbar-nav .nav-link{
-    color: #fff !important;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.navbar-nav .nav-link:hover{
-    color:#005F73 !important;
-    text-decoration: underline;
+p {
+  font-family: "Lora", serif;
 }
 
 /* Banner Inicio */
 .banner-inicio .carousel-inner .carousel-item {
-    max-width: 100%;
-    max-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
 }
 
 /* Projetos em Destaque */
-
-.projetos-destaques{
-    margin-top: -20vh;
+.projetos-destaques {
+  margin-top: -20vh;
 }
 
-.lista-projetos-destaques{
-    padding: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-}
-
-/* Sobre Mim */
-.sobre-mim{
-    padding: 1vh;
-}
-
-.fundo-sobre-mim{
-    background-color: #FFF8F6;
-}
-
-.card-title{
-    color: #B71C1C !important;
-}
-
-.card-text p{
-    font-size: 30px;
-    color: #2B2B2B;
-}
-
-/* Projetos */
-.projetos-titulo{
-    padding: 5vh;
-    color: #FFF;
-    text-align: center;
-}
-
-.projetos{
-    border: 1px solid #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    padding: 5vh;
-    flex-direction: row;
+.lista-projetos-destaques {
+  padding: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
 }
 
 /* Redes Sociais */
-.contatos{
-    padding: 5vh;
+.contatos {
+  padding: 5vh;
 }
 
-.instagram-titulo{
-    padding: 5vh;
-    color: #FFF !important;
-    font-size: 30px;
-    text-align: center;
+.instagram-titulo {
+  padding: 5vh;
+  color: #fff !important;
+  font-size: 30px;
+  text-align: center;
 }
 
-.instagram-feed{
-    border: 1px solid #fff;
-    padding: 5vh;
+.instagram-feed {
+  border: 1px solid #fff;
+  padding: 5vh;
 }
 
 /* Footer */
 
-.banner-governo-ce{
-    margin-top: 1vh;
+.banner-governo-ce {
+  margin-top: 1vh;
 }
