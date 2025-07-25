@@ -75,3 +75,27 @@ p {
 .banner-governo-ce {
   margin-top: 1vh;
 }
+
+.alegoria {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  pointer-events: none; /* ESSENCIAL para permitir cliques no vídeo */
+}
+
+/* Posição específica para o canto inferior esquerdo */
+.alegoria-bottom-left {
+  bottom: -40px;
+  left: 10rem;
+  width: 36%;
+  height: 25vh;
+}
+
+/* Posição específica para o canto superior direito */
+.alegoria-top-right {
+  top: -60px;
+  right: -6rem;
+  width: 36%;
+  height: 25vh;
+}
