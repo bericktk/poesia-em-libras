@@ -1,25 +1,6 @@
 // Importando a chave da API e o ID da playlist
 import { chaveApi, idPlaylist } from "./chave-api.js";
 
-/**
- * Embaralha os elementos de um array usando o algoritmo de Fisher-Yates.
- * @param {Array} array O array a ser embaralhado.
- */
-function embaralharArray(array) {
-  let currentIndex = array.length,
-    randomIndex;
-
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-  return array;
-}
-
 // Lista de imagens para o fundo dos vídeos
 const backgroundImages = [
   "./src/images/background-projetos/1.png",
@@ -28,8 +9,6 @@ const backgroundImages = [
   "./src/images/background-projetos/4.png",
   "./src/images/background-projetos/5.png",
 ];
-
-embaralharArray(backgroundImages);
 
 document.addEventListener("DOMContentLoaded", function () {
   // --- SEÇÃO 1: LÓGICA DO HEADER E NAVEGAÇÃO ---

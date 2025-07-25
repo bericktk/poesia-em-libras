@@ -1,57 +1,80 @@
-@media only screen and (max-width: 1400px){
-    .lista-projetos-destaques{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 16px;
-        padding: 16px;
-        scroll-behavior: smooth;
-    }
+@media only screen and (max-width: 1400px) {
+  .lista-projetos-destaques {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 16px;
+    scroll-behavior: smooth;
+  }
 
-    .lista-projetos-destaques::-webkit-scrollbar {
-        display: none;
-    }
+  .lista-projetos-destaques::-webkit-scrollbar {
+    display: none;
+  }
 
-    .lista-projetos-destaques > *{
-        flex: 0 0 auto;
-    }
+  .lista-projetos-destaques > * {
+    flex: 0 0 auto;
+  }
 }
 
-@media only screen and (max-width: 600px){
-    /* Navbar */
-    .navbar{
-        height: 50vh;
-    }
+@media only screen and (max-width: 1200px) {
+  .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
 
-    .navbar img{
-        max-width: 10vh;
-        height: auto;
-    }
+  .card img {
+    border-radius: 0% !important;
+  }
+  .row.g-0.fundo-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    height: 50vh;
+  }
 
-    .navbar-nav{
-        margin-top: 0;
-    }
+  .navbar img {
+    max-width: 10vh;
+    height: auto;
+  }
 
-    .projetos-destaques{
-        margin-top: 0;
-    }
+  .navbar-nav {
+    margin-top: 0;
+  }
 
-    .lista-projetos-destaques{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 16px;
-        padding: 16px;
-        scroll-behavior: smooth;
-    }
+  .projetos-destaques {
+    margin-top: 0;
+  }
 
-    .lista-projetos-destaques::-webkit-scrollbar {
-        display: none;
-    }
+  .lista-projetos-destaques {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 16px;
+    scroll-behavior: smooth;
+  }
 
-    .lista-projetos-destaques > *{
-        flex: 0 0 auto;
-    }
+  .lista-projetos-destaques::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lista-projetos-destaques > * {
+    flex: 0 0 auto;
+  }
 }
