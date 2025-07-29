@@ -103,13 +103,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const folha = document.createElement("div");
             folha.className = "alegoria alegoria-bottom-left";
             folha.style.backgroundImage =
-              "url('./src/images/overlays/01-left.png')"; // Exemplo de imagem
+              "url('./src/images/overlays/peixes.png')";
             videoContainer.appendChild(folha);
-            const nota = document.createElement("div");
-            nota.className = "alegoria alegoria-top-right";
-            nota.style.backgroundImage =
-              "url('./src/images/overlays/01-right.png')"; // Exemplo de imagem
-            videoContainer.appendChild(nota);
           }
 
           playlistContainer.appendChild(videoContainer);
