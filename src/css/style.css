@@ -36,7 +36,7 @@ p {
 /* Banner Inicio */
 .banner-inicio .carousel-inner .carousel-item {
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 100dvh;
 }
 
 .carrousel-caption h1 {
@@ -60,38 +60,26 @@ p {
   gap: 2vh;
 }
 
-/* Redes Sociais */
-.contatos {
-  padding: 5vh;
-}
-
-.instagram-titulo {
-  padding: 5vh;
-  color: #fff !important;
-  font-size: 30px;
-  text-align: center;
-}
-
-.instagram-feed {
-  border: 1px solid #fff;
-  padding: 5vh;
-}
-
-/* Footer */
-
 .banner-governo-ce {
   margin-top: 1vh;
 }
+/* Footer */
+footer {
+  color: #fff;
+  text-align: center;
+  font-size: larger;
+  padding: 2vh;
+}
 
+/* Estilo para o vídeo */
 .alegoria {
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 2;
-  pointer-events: none; /* ESSENCIAL para permitir cliques no vídeo */
+  pointer-events: none;
 }
 
-/* Posição específica para o canto inferior esquerdo */
 .alegoria-bottom-left {
   bottom: -40px;
   left: 10rem;
@@ -99,7 +87,6 @@ p {
   height: 25vh;
 }
 
-/* Posição específica para o canto superior direito */
 .alegoria-top-right {
   top: -60px;
   right: -6rem;

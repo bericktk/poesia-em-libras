@@ -19,19 +19,28 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .logo img {
+    max-height: 20vh !important;
+    width: auto;
+  }
+
+  .carousel-caption.d-none.d-md-block {
+    display: block !important;
+  }
+
   .card {
     text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
   }
 
   .card img {
     border-radius: 0% !important;
+    padding: 0.5rem;
+    max-height: 50vh;
   }
   .row.g-0.fundo-sobre-mim {
     display: flex;
@@ -41,8 +50,12 @@
     justify-content: center;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   /* Navbar */
+  .logo img {
+    max-height: 10vh !important;
+    width: auto;
+  }
   .navbar {
     height: 50vh;
   }
@@ -56,25 +69,12 @@
     margin-top: 0;
   }
 
-  .projetos-destaques {
-    margin-top: 0;
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 1rem;
   }
 
-  .lista-projetos-destaques {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 16px;
-    padding: 16px;
-    scroll-behavior: smooth;
-  }
-
-  .lista-projetos-destaques::-webkit-scrollbar {
-    display: none;
-  }
-
-  .lista-projetos-destaques > * {
-    flex: 0 0 auto;
+  .card-text {
+    text-align: center !important;
+    font-size: 1.5rem !important;
   }
 }
