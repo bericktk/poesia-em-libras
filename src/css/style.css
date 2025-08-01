@@ -46,20 +46,6 @@ p {
   color: #fff;
 }
 
-/* Projetos em Destaque */
-.projetos-destaques {
-  margin-top: -20vh;
-}
-
-.lista-projetos-destaques {
-  padding: 5vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2vh;
-}
-
 .banner-governo-ce {
   margin-top: 1vh;
 }
@@ -69,27 +55,4 @@ footer {
   text-align: center;
   font-size: larger;
   padding: 2vh;
-}
-
-/* Estilo para o vídeo */
-.alegoria {
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.alegoria-bottom-left {
-  bottom: -40px;
-  left: 10rem;
-  width: 36%;
-  height: 25vh;
-}
-
-.alegoria-top-right {
-  top: -60px;
-  right: -6rem;
-  width: 36%;
-  height: 25vh;
 }
