@@ -29,7 +29,7 @@
     justify-content: center;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   /* Navbar */
   .logo img {
     max-height: 10vh !important;
