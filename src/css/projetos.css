@@ -1,10 +1,8 @@
-#projetos {
-  padding: 5vh;
-}
-
-.videos {
+/* Container que segura vídeo e peixes */
+.conteudo-video {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -17,36 +15,52 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Vídeo centralizado */
 .video-wrapper {
   position: relative;
-  width: 70%; /* controla o tamanho do vídeo */
+  width: 80%;
   aspect-ratio: 16 / 9;
   margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* iframe do YouTube */
 .video-wrapper iframe {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   border-radius: 12px;
   display: block;
   position: relative;
   z-index: 1;
 }
 
-.video-wrapper .alegoria {
+.alegoria {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* mantém proporção sem cortar */
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 20%;
+  pointer-events: none;
   z-index: 2;
-  pointer-events: none; /* não atrapalha clique nos botões do YouTube */
+}
+
+.alegoria.esquerda {
+  left: 0;
+}
+
+.alegoria.direita {
+  right: 0;
+}
+
+.alegoria img {
+  width: 100%;
+  height: auto;
 }
 
 .video-info h3 {
@@ -58,8 +72,9 @@
   padding: 0.5rem;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
   .video-wrapper {
-    width: 95%;
+    width: 85%;
   }
 }
