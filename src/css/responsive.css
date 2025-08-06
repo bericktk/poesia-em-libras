@@ -1,40 +1,9 @@
-@media only screen and (max-width: 1200px) {
-  .logo img {
-    max-height: 20vh !important;
-    width: auto;
-  }
-
-  .carousel-caption.d-none.d-md-block {
-    display: block !important;
-  }
-
-  .card {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card img {
-    border-radius: 0% !important;
-    padding: 0.5rem;
-  }
-  .row.g-0.fundo-sobre-mim {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-  }
-}
+/* Smartphones pequenos (até 400px) */
 @media only screen and (max-width: 400px) {
-  /* Navbar */
   .logo img {
     max-height: 10vh !important;
-    width: auto;
   }
+
   .navbar {
     height: 50vh;
   }
@@ -55,5 +24,86 @@
   .card-text {
     text-align: center !important;
     font-size: 1.5rem !important;
+  }
+}
+
+/* Smartphones médios e grandes (401px até 600px) */
+@media only screen and (max-width: 600px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 1.2rem;
+  }
+
+  .card img {
+    max-width: 80%;
+  }
+}
+
+/* Tablets em retrato (601px até 768px) */
+@media only screen and (max-width: 768px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+}
+
+/* Tablets em paisagem e notebooks pequenos (769px até 992px) */
+@media only screen and (max-width: 992px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 1.6rem;
+  }
+
+  .card img {
+    max-width: 70%;
+  }
+}
+
+/* Laptops e desktops médios (993px até 1200px) */
+@media only screen and (max-width: 1200px) {
+  .logo img {
+    max-height: 20vh;
+    width: auto;
+  }
+
+  .carousel-caption.d-none.d-md-block {
+    display: block !important;
+  }
+
+  .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card img {
+    border-radius: 0% !important;
+    padding: 0.5rem;
+  }
+
+  .row.g-0.fundo-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+/* Desktops grandes (1201px até 1440px) */
+@media only screen and (max-width: 1440px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Telas Full HD (1441px até 1920px) */
+@media only screen and (max-width: 1920px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 2.2rem;
   }
 }
