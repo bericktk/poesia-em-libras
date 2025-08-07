@@ -58,6 +58,13 @@
   .card img {
     max-width: 70%;
   }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 /* Laptops e desktops médios (993px até 1200px) */
