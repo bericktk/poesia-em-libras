@@ -1,5 +1,5 @@
 /* Smartphones pequenos (até 400px) */
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 0px) and (max-width: 400px) {
   .logo img {
     max-height: 10vh !important;
   }
@@ -18,34 +18,49 @@
   }
 
   .carousel-caption.d-none.d-md-block h1 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .card-text {
     text-align: center !important;
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
   }
 }
 
 /* Smartphones médios e grandes (401px até 600px) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 401px) and (max-width: 600px) {
   .carousel-caption.d-none.d-md-block h1 {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
+  }
+
+  .logo img {
+    max-height: 10vh !important;
   }
 
   .card img {
-    max-width: 80%;
+    max-width: 100%;
+  }
+
+  .card-text {
+    font-size: 1rem !important;
   }
 }
 
 /* Tablets em retrato (601px até 768px) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
+  .cabecalho-container {
+    margin: 0 10px 0 5px;
+  }
   .carousel-caption.d-none.d-md-block h1 {
     font-size: 1.4rem;
   }
 
   .card {
     flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
   }
 }
 
@@ -56,7 +71,7 @@
   }
 
   .card img {
-    max-width: 70%;
+    max-width: 100%;
   }
 
   .social-links {
@@ -102,15 +117,15 @@
 }
 
 /* Desktops grandes (1201px até 1440px) */
-@media only screen and (max-width: 1440px) {
+@media (max-width: 1440px) {
   .carousel-caption.d-none.d-md-block h1 {
     font-size: 2rem;
   }
 }
 
 /* Telas Full HD (1441px até 1920px) */
-@media only screen and (max-width: 1920px) {
+@media (max-width: 1920px) {
   .carousel-caption.d-none.d-md-block h1 {
-    font-size: 2.2rem;
+    font-size: 10%;
   }
 }
