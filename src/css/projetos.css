@@ -4,123 +4,132 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .video-container {
   width: 100%;
   margin-bottom: 40px;
-  padding: 3rem;
-  align-items: center;
+  padding: 3rem 1rem; /* Adiciona padding para dar espaço */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Impede o vazamento em TODAS as direções */
 }
 
 /* Vídeo centralizado */
 .video-wrapper {
   position: relative;
-  width: 80%;
+  width: 70%; /* Vídeo ocupa 70% do espaço, deixando 15% de cada lado (padrão) */
   aspect-ratio: 16 / 9;
   margin: 0 auto;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* iframe do YouTube */
 .video-wrapper iframe {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   border-radius: 12px;
-  display: block;
-  position: relative;
-  z-index: 1;
 }
 
 .alegoria {
   position: absolute;
-  max-width: 30%;
+  height: auto;
   pointer-events: none;
   z-index: 2;
+  transition: all 0.3s ease;
+  max-width: 20%;
 }
 
-.alegoria img {
-  width: 100%;
-  height: auto;
-}
-
-/*Especificos*/
+/* --- POSICIONAMENTO SEGURO --- */
+/* Ajustes específicos de posição vertical se necessário */
 .peixe-azul {
-  bottom: 50%;
-  transform: translateY(80%);
-  left: -45px;
+  transform: translateY(18%);
+  left: 2%;
 }
-
 .peixe-vermelho {
-  top: 50%;
-  transform: translateY(-80%);
-  right: -45px;
+  transform: translateY(-18%);
+  right: 2%;
 }
-
 .mascara-esquerda {
-  bottom: 50%;
-  transform: translateY(80%);
-  left: -50px;
+  transform: translateY(40%);
+  left: -1%;
 }
-
 .mascara-direita {
-  bottom: 64%;
-  transform: translateY(100%);
-  right: -45px;
+  transform: translateY(56%);
+  right: -1%;
+  width: 100%;
 }
-
 .coroa-esquerda {
-  top: 50%;
-  transform: translateY(-50%);
-  left: -50px;
+  transform: translateY(0%);
+  left: 3%;
 }
-
 .coroa-direita {
-  top: 50%;
-  transform: translateY(-50%);
-  right: -50px;
+  transform: translateY(0%);
+  right: 1%;
 }
-
 .interrogacao-esquerda {
-  top: 20%;
   transform: translateY(-50%);
-  left: -70px;
-  width: 20%;
+  top: 20%;
+  left: -2%;
 }
-
 .interrogacao-direita {
+  transform: translateY(37%);
   bottom: 20%;
-  transform: translateY(50%);
-  right: -70px;
-  width: 20%;
+  right: -2%;
 }
-
 .cachorro-esquerdo {
-  bottom: 31.5%;
   transform: translateY(70%);
-  left: -70px;
-  width: 20%;
+  bottom: 31.5%;
+  left: -2%;
 }
-
 .cachorro-direito {
-  top: 31.5%;
   transform: translateY(-70%);
-  right: -70px;
-  width: 20%;
+  top: 31.5%;
+  right: -3%;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* =============================================== */
+/* AJUSTES RESPONSIVOS DENTRO DE PROJETOS.CSS      */
+/* =============================================== */
+
+/* --- Ajustes para telas menores (até 992px) --- */
+@media (max-width: 992px) {
   .video-wrapper {
-    width: 100%;
+    width: 75%; /* Reduz um pouco o vídeo para dar mais espaço */
+  }
+}
+
+/* --- Ajustes para tablets (até 768px) --- */
+@media (max-width: 768px) {
+  .alegoria img {
+    max-width: 22%; /* Ajusta o tamanho da alegoria */
+  }
+  .video-wrapper {
+    width: 80%; /* O vídeo ocupa um pouco mais da tela */
+  }
+}
+
+/* --- Ajustes para smartphones (até 576px) --- */
+@media (max-width: 576px) {
+  .alegoria img {
+    max-width: 25%;
+  }
+  .video-wrapper {
+    width: 85%;
+  }
+}
+
+/* --- Ajustes para smartphones muito pequenos (até 400px) --- */
+@media (max-width: 400px) {
+  .alegoria {
+    max-width: 28%;
+  }
+  .video-wrapper {
+    width: 90%;
   }
 }

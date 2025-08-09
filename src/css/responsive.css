@@ -1,99 +1,8 @@
-/* Smartphones pequenos (até 400px) */
-@media only screen and (min-width: 0px) and (max-width: 400px) {
-  .logo img {
-    max-height: 10vh !important;
-  }
+/* =================================================================== */
+/* ESTILOS RESPONSIVOS GERAIS                                         */
+/* Ponto de quebra principal para notebooks e tablets grandes         */
+/* =================================================================== */
 
-  .navbar {
-    height: 50vh;
-  }
-
-  .navbar img {
-    max-width: 10vh;
-    height: auto;
-  }
-
-  .navbar-nav {
-    margin-top: 0;
-  }
-
-  .carousel-caption.d-none.d-md-block h1 {
-    font-size: 1rem !important;
-  }
-
-  .card-text {
-    text-align: center !important;
-    font-size: 1rem !important;
-  }
-}
-
-/* Smartphones médios e grandes (401px até 600px) */
-@media only screen and (max-width: 600px) {
-  .carousel-caption.d-none.d-md-block h1 {
-    font-size: 1.2rem !important;
-  }
-
-  .logo img {
-    max-height: 10vh !important;
-  }
-
-  .card img {
-    max-width: 100%;
-  }
-
-  .card-text {
-    font-size: 1rem !important;
-  }
-}
-
-/* Tablets em retrato (601px até 768px) */
-@media only screen and (max-width: 760px) {
-  .carousel-caption.d-none.d-md-block h1 {
-    font-size: 1.4rem;
-  }
-
-  .card {
-    flex-direction: column;
-  }
-
-  .card-title {
-    font-size: 1.5rem;
-  }
-}
-
-/* Tablets em paisagem e notebooks pequenos (769px até 992px) */
-@media only screen and (max-width: 992px) {
-  .carousel-caption.d-none.d-md-block h1 {
-    font-size: 1.6rem;
-  }
-
-  .card img {
-    max-width: 100%;
-  }
-
-  .social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .social-link {
-    max-width: 100%;
-  }
-
-  .informacao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    gap: 1rem;
-  }
-}
-
-/* Laptops e desktops médios (993px até 1200px) */
 @media only screen and (max-width: 1200px) {
   .logo img {
     max-height: 20vh;
@@ -102,6 +11,15 @@
 
   .carousel-caption.d-none.d-md-block {
     display: block !important;
+  }
+
+  /* Força o empilhamento da seção "Sobre" em telas menores que 1200px */
+  .row.g-0.fundo-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
   }
 
   .card {
@@ -117,12 +35,141 @@
     border-radius: 0% !important;
     padding: 0.5rem;
   }
+}
 
-  .row.g-0.fundo-sobre-mim {
+/* =================================================================== */
+/* Tablets em paisagem e notebooks pequenos (até 992px)               */
+/* =================================================================== */
+
+@media only screen and (max-width: 992px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 1.6rem;
+  }
+
+  .col-md-6 {
+    width: 100% !important;
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+
+  /* Ajuste de Contatos para empilhamento vertical */
+  .social-links {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* Adiciona espaço vertical entre os contatos */
+  }
+
+  .social-link {
+    max-width: 80%; /* Permite que os itens ocupem mais espaço na tela */
+    text-align: center;
+  }
+}
+
+/* =================================================================== */
+/* Tablets em retrato e celulares (até 768px)                         */
+/* =================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 1.4rem;
+  }
+
+  /* --- Cabeçalho --- */
+  .logo img {
+    max-height: 12vh; /* Reduz a altura do logo para um tamanho mais adequado */
+  }
+
+  header.cabecalho.rolagem img {
+    max-height: 10vh; /* Garante que o logo na rolagem também seja ajustado */
+  }
+
+  /* --- Seção Sobre Mim --- */
+  .card-title {
+    font-size: 2.2rem !important; /* Reduz o tamanho do título */
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 1.2rem !important; /* Reduz o tamanho do texto do parágrafo */
+  }
+
+  .imagem-interprete {
+    padding: 1rem; /* Reduz o espaçamento da imagem */
+  }
+
+  /* --- Seção Projetos (Vídeos) --- */
+  .video-container {
+    padding: 1rem 0;
+    overflow-x: hidden; /* CRÍTICO: Impede a rolagem horizontal no container */
+  }
+
+  .video-wrapper {
+    width: 80%; /* Deixa 10% de cada lado para as alegorias */
+  }
+
+  .alegoria {
+    max-width: 25%;
+  }
+
+  /* Posiciona as alegorias NAS BORDAS do container, sem empurrar para fora */
+  .peixe-azul,
+  .mascara-esquerda,
+  .coroa-esquerda,
+  .interrogacao-esquerda,
+  .cachorro-esquerdo {
+    left: 0;
+  }
+
+  .peixe-vermelho,
+  .mascara-direita,
+  .coroa-direita,
+  .interrogacao-direita,
+  .cachorro-direito {
+    right: 0;
+  }
+}
+
+/* =================================================================== */
+/* Smartphones médios e grandes (até 600px)                           */
+/* =================================================================== */
+
+@media only screen and (max-width: 600px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 1.2rem !important;
+  }
+
+  .logo img {
+    max-height: 10vh !important;
+  }
+}
+
+/* =================================================================== */
+/* Smartphones pequenos (até 480px)                                   */
+/* =================================================================== */
+
+@media (max-width: 480px) {
+  .video-wrapper {
+    width: 85%; /* Diminui um pouco mais o vídeo para dar mais espaço */
+  }
+
+  .alegoria {
+    max-width: 20%;
+  }
+}
+
+/* =================================================================== */
+/* Smartphones muito pequenos (até 400px)                             */
+/* =================================================================== */
+
+@media only screen and (max-width: 400px) {
+  .carousel-caption.d-none.d-md-block h1 {
+    font-size: 1rem !important;
+  }
+
+  .card-text {
+    font-size: 1rem !important; /* Ajuste final para o texto em telas bem pequenas */
   }
 }
