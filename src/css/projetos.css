@@ -42,10 +42,34 @@
   pointer-events: none;
   z-index: 2;
   transition: all 0.3s ease;
-  max-width: 20%;
+}
+.alegoria img {
+  height: auto;
+  max-width: 85%;
 }
 
 /* --- POSICIONAMENTO SEGURO --- */
+
+/* Elementos da Esquerda */
+.peixe-azul,
+.mascara-esquerda,
+.coroa-esquerda,
+.interrogacao-esquerda,
+.cachorro-esquerdo {
+  left: 2%;
+  transform: translateY(40%);
+}
+
+/* Elementos da Direita */
+.peixe-vermelho,
+.mascara-direita,
+.coroa-direita,
+.interrogacao-direita,
+.cachorro-direito {
+  right: 2%;
+  transform: translateY(-40%);
+}
+
 /* Ajustes específicos de posição vertical se necessário */
 .peixe-azul {
   transform: translateY(18%);
@@ -56,21 +80,20 @@
   right: 2%;
 }
 .mascara-esquerda {
-  transform: translateY(40%);
+  transform: translateY(33%);
   left: -1%;
 }
 .mascara-direita {
-  transform: translateY(56%);
+  transform: translateY(22%);
   right: -1%;
-  width: 100%;
 }
 .coroa-esquerda {
   transform: translateY(0%);
-  left: 3%;
+  left: -2%;
 }
 .coroa-direita {
-  transform: translateY(0%);
-  right: 1%;
+  transform: translateY(1%);
+  right: -2%;
 }
 .interrogacao-esquerda {
   transform: translateY(-50%);
@@ -117,7 +140,7 @@
 /* --- Ajustes para smartphones (até 576px) --- */
 @media (max-width: 576px) {
   .alegoria img {
-    max-width: 25%;
+    max-width: 15%;
   }
   .video-wrapper {
     width: 85%;
