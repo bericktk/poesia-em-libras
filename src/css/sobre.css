@@ -1,4 +1,9 @@
 /* Sobre Mim */
+
+.sobre-mim-container {
+  max-width: 100% !important;
+}
+
 .sobre-mim {
   padding: 1vh;
 }
