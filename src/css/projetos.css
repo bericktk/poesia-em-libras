@@ -1,4 +1,38 @@
 /* Container que segura vídeo e peixes */
+.video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.video-container.overlay-peixes::before {
+  background-image: url("../images/overlays/peixes.png");
+}
+
+.video-container.overlay-mascaras::before {
+  background-image: url("../images/overlays/mascaras.png");
+}
+
+.video-container.overlay-coroas::before {
+  background-image: url("../images/overlays/coroas.png");
+}
+
+.video-container.overlay-perguntas::before {
+  background-image: url("../images/overlays/perguntas.png");
+}
+
+.video-container.overlay-cachorros::before {
+  background-image: url("../images/overlays/cachorros.png");
+}
+
 .conteudo-video {
   position: relative;
   display: flex;
@@ -10,7 +44,7 @@
 .video-container {
   width: 100%;
   margin-bottom: 40px;
-  padding: 3rem 1rem; /* Adiciona padding para dar espaço */
+  padding: 3rem 0rem; /* Adiciona padding para dar espaço */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,90 +70,6 @@
   border-radius: 12px;
 }
 
-.alegoria {
-  position: absolute;
-  height: auto;
-  pointer-events: none;
-  z-index: 2;
-  transition: all 0.3s ease;
-}
-.alegoria img {
-  height: auto;
-  max-width: 85%;
-}
-
-/* --- POSICIONAMENTO SEGURO --- */
-
-/* Elementos da Esquerda */
-.peixe-azul,
-.mascara-esquerda,
-.coroa-esquerda,
-.interrogacao-esquerda,
-.cachorro-esquerdo {
-  left: 2%;
-  transform: translateY(40%);
-}
-
-/* Elementos da Direita */
-.peixe-vermelho,
-.mascara-direita,
-.coroa-direita,
-.interrogacao-direita,
-.cachorro-direito {
-  right: 2%;
-  transform: translateY(-40%);
-}
-
-/* Ajustes específicos de posição vertical se necessário */
-.peixe-azul {
-  transform: translateY(18%);
-  left: 2%;
-}
-.peixe-vermelho {
-  transform: translateY(-18%);
-  right: 2%;
-}
-.mascara-esquerda {
-  transform: translateY(33%);
-  left: -1%;
-}
-.mascara-direita {
-  transform: translateY(22%);
-  right: -1%;
-}
-.coroa-esquerda {
-  transform: translateY(0%);
-  left: -2%;
-}
-.coroa-direita {
-  transform: translateY(1%);
-  right: -2%;
-}
-.interrogacao-esquerda {
-  transform: translateY(-50%);
-  top: 20%;
-  left: -2%;
-}
-.interrogacao-direita {
-  transform: translateY(37%);
-  bottom: 20%;
-  right: -2%;
-}
-.cachorro-esquerdo {
-  transform: translateY(70%);
-  bottom: 31.5%;
-  left: -2%;
-}
-.cachorro-direito {
-  transform: translateY(-70%);
-  top: 31.5%;
-  right: -3%;
-}
-
-/* =============================================== */
-/* AJUSTES RESPONSIVOS DENTRO DE PROJETOS.CSS      */
-/* =============================================== */
-
 /* --- Ajustes para telas menores (até 992px) --- */
 @media (max-width: 992px) {
   .video-wrapper {
@@ -129,9 +79,6 @@
 
 /* --- Ajustes para tablets (até 768px) --- */
 @media (max-width: 768px) {
-  .alegoria img {
-    max-width: 22%; /* Ajusta o tamanho da alegoria */
-  }
   .video-wrapper {
     width: 80%; /* O vídeo ocupa um pouco mais da tela */
   }
@@ -139,9 +86,6 @@
 
 /* --- Ajustes para smartphones (até 576px) --- */
 @media (max-width: 576px) {
-  .alegoria img {
-    max-width: 15%;
-  }
   .video-wrapper {
     width: 85%;
   }
@@ -149,9 +93,6 @@
 
 /* --- Ajustes para smartphones muito pequenos (até 400px) --- */
 @media (max-width: 400px) {
-  .alegoria {
-    max-width: 28%;
-  }
   .video-wrapper {
     width: 90%;
   }
